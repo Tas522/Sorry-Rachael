@@ -41,16 +41,17 @@ body {
 
 /* Heart Shape and Animation */
 .heart {
-    position: relative;
+    position: left;
     width: 150px;
     height: 135px;
     animation: pulse 1.5s infinite;
-    margin-bottom: 30px; /* Adjusted margin to center text and heart */
+    margin-bottom: 0px; /* Adjusted margin to center text and heart */
 }
 
 .heart:before,
 .heart:after {
-    content: "";
+    content: ""; 
+    
     position: absolute;
     top: 0;
     width: 150px;
@@ -77,7 +78,7 @@ body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1);
@@ -89,7 +90,7 @@ body {
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
     max-width: 90%;
     padding: 0 20px;
 }
