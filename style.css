@@ -1,12 +1,12 @@
 /* Heart Shape and Animation */
 .heart {
-    position: relative;
+    position: relative; /* Changed from "left" to "relative" */
     width: 150px;
     height: 135px;
     background: linear-gradient(145deg, #ff4b4b, #ff6b6b);
     border-radius: 75px 75px 0 0;
-    animation: heartbeat 2s infinite alternate; /* New animation */
-    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+    margin-bottom: 20px; /* Adjusted margin to center text and heart */
 }
 
 /* Words Styling */
@@ -14,31 +14,24 @@
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
-    animation: slideDown 1.5s ease-in-out; /* New animation */
+    animation: fadeIn 3s ease-in-out;
     max-width: 90%;
     padding: 0 20px;
-    position: relative;
-    top: 10px;
+    position: relative; /* Added position to allow vertical movement */
+    top: 10px; /* Adjust this value to control downward movement */
 }
 
-/* Heartbeat Animation */
-@keyframes heartbeat {
+/* Rest of your existing styles remain unchanged */
+
+/* Heart Pulse Animation */
+@keyframes pulse {
     0% {
         transform: scale(1);
     }
-    100% {
-        transform: scale(1.1); /* Slightly larger for a heartbeat effect */
-    }
-}
-
-/* Slide Down Animation for Words */
-@keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
+    50% {
+        transform: scale(1.2);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
