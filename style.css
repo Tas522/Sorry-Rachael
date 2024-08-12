@@ -96,7 +96,17 @@ body {
     max-width: 90%;
     padding: 0 20px;
 }
-
+/* Words Styling */
+.message {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    animation: fadeIn 3s ease-in-out;
+    max-width: 90%;
+    padding: 0 20px;
+    position: relative; /* Added position to allow vertical movement */
+    top: 10px; /* Adjust this value to control downward movement */
+ 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
