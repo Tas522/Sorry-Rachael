@@ -14,7 +14,7 @@ body {
     position: relative;
     width: 150px;
     height: 135px;
-    animation: pulse 1.5s infinite;
+    animation: pulse 2.5s infinite;
 }
 
 .heart:before,
