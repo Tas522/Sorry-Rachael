@@ -42,8 +42,8 @@ body {
 /* Heart Shape and Animation */
 .heart {
     position: relative;
-    width: 150px;
-    height: 135px;
+    width: 10px;
+    height: 15px;
     animation: pulse 1.5s infinite;
     margin-bottom: 30px; /* Adjusted margin to center text and heart */
 }
@@ -55,12 +55,12 @@ body {
     top: 0;
     width: 150px;
     height: 225px;
-    border-radius: 75px 75px 0 0;
+    border-radius: 15px 15px 0 0;
     background: linear-gradient(145deg, #ff4b4b, #ff6b6b);
 }
 
 .heart:before {
-    left: 75px;
+    left: 0px;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
 }
