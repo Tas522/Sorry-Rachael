@@ -1,6 +1,7 @@
 /* Body and Background */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,7 +15,8 @@ body {
     position: relative;
     width: 150px;
     height: 135px;
-    animation: pulse 2.5s infinite;
+    animation: pulse 1.5s infinite;
+    margin-bottom: 30px; /* Added margin to move text below the heart */
 }
 
 .heart:before,
@@ -55,11 +57,12 @@ body {
 
 /* Message Box Styling */
 .message {
-    margin-top: 20px;
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
     animation: fadeIn 2s ease-in-out;
+    max-width: 90%;
+    padding: 0 20px;
 }
 
 h1 {
