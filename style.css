@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 5;
     background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -16,7 +16,7 @@ body {
     width: 150px;
     height: 135px;
     animation: pulse 1.5s infinite;
-    margin-bottom: 30px; /* Added margin to move text below the heart */
+    margin-bottom: 90px; /* Added margin to move text below the heart */
 }
 
 .heart:before,
