@@ -43,9 +43,9 @@ body {
 .heart {
     position: relative;
     width: 150px;
-    height: 150px;
+    height: 135px;
     animation: pulse 1.5s infinite;
-    margin-bottom: 150px; /* Adjusted to ensure text doesn't overlap */
+    margin-bottom: 30px; /* Adjusted margin to center text and heart */
 }
 
 .heart:before,
@@ -54,9 +54,9 @@ body {
     position: absolute;
     top: 0;
     width: 150px;
-    height: 150px;
+    height: 225px;
     border-radius: 75px 75px 0 0;
-    background: #ff4b4b; /* Solid color for the heart */
+    background: linear-gradient(145deg, #ff4b4b, #ff6b6b);
 }
 
 .heart:before {
@@ -91,8 +91,7 @@ body {
     font-size: 1.5rem;
     animation: fadeIn 2s ease-in-out;
     max-width: 90%;
-    padding: 20px; 
-    margin-top: 50px; /* Adjusted to move text below the heart */
+    padding: 0 20px;
 }
 
 h1 {
