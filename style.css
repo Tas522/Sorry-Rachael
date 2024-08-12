@@ -45,7 +45,7 @@ body {
     width: 150px;
     height: 135px;
     animation: pulse 1.5s infinite;
-    margin-bottom: 30px; /* Adjusted margin to center text and heart */
+    margin-bottom: 1000px; /* Adjusted margin to center text and heart */
 }
 
 .heart:before,
