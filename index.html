@@ -8,31 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" id="date"></a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="content">
-        <div class="heart"></div>
-        <div class="message">
-            <h1>I'm sorry, Rachael.</h1>
-            <p>I never meant to hurt you. I know your time means a lot. Please forgive me. ❤️</p>
-            <button class="accept-btn" onclick="alert('That was the last one! ❤️')">I Forgive You</button>
+    <div class="nav">
+        <div class="tabs">
+            <a href="#" class="tab">Home</a>
+            <a href="#" class="tab">About</a>
         </div>
     </div>
-
-    <script>
-        // JavaScript to insert today's date
-        const dateElement = document.getElementById('date');
-        const today = new Date().toLocaleDateString();
-        dateElement.textContent = today;
-    </script>
+    <div class="heart"></div>
+    <div class="message">
+        <h1>I'm sorry, Rachael.</h1>
+        <p>I never meant to hurt you. I know your time means a lot. Please forgive me. ❤️</p>
+        <button class="accept-btn" onclick="alert('That was the last one! ❤️')">I Forgive You</button>
+    </div>
+    <footer>
+        <p>© August, 2024</p>
+    </footer>
 </body>
 </html>
