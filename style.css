@@ -56,7 +56,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 75px 75px 0 0;
-    background: linear-gradient(135deg, #ffffff 0%, #0099ff 100%); /* White to blue gradient */
+    background: #ff4b4b; /* Solid color for the heart */
 }
 
 .heart:before {
@@ -91,8 +91,8 @@ body {
     font-size: 1.5rem;
     animation: fadeIn 2s ease-in-out;
     max-width: 90%;
-    padding: 20px;
-    margin-top: 100px; /* Adjusted to move text further down */
+    padding: 20px; 
+    margin-top: 50px; /* Adjusted to move text below the heart */
 }
 
 h1 {
@@ -153,4 +153,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} 
