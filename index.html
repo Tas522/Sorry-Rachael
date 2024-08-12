@@ -1,156 +1,27 @@
-/* Body and Background */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Navigation Bar */
-.nav {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.tabs {
-    display: flex;
-    gap: 20px;
-}
-
-.tab {
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-family: 'Georgia', serif;
-    transition: background-color 0.3s;
-}
-
-.tab:hover {
-    background-color: #ff4b4b;
-}
-
-/* Heart Shape and Animation */
-.heart {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    animation: pulse 1.5s infinite;
-    margin-bottom: 150px; /* Adjusted to ensure text doesn't overlap */
-}
-
-.heart:before,
-.heart:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 150px;
-    height: 150px;
-    border-radius: 75px 75px 0 0;
-    background: #ff4b4b; /* Solid color for the heart */
-}
-
-.heart:before {
-    left: 75px;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-}
-
-.heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-}
-
-/* Heart Pulse Animation */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Message Box Styling */
-.message {
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
-    animation: fadeIn 2s ease-in-out;
-    max-width: 90%;
-    padding: 20px; 
-    margin-top: 50px; /* Adjusted to move text below the heart */
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
-}
-
-/* Button Styling */
-.accept-btn {
-    padding: 12px 25px;
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
-}
-
-.accept-btn:hover {
-    background-color: #ff4b4b;
-    transform: scale(1.05);
-}
-
-.accept-btn:active {
-    background-color: #ff3b3b;
-    transform: scale(0.95);
-}
-
-/* Footer Styling */
-footer {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Georgia', serif;
-}
-
-/* Fade-in Animation for Message */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="tabs">
+            <a href="#" class="tab">Home</a>
+            <a href="#" class="tab">About</a>
+        </div>
+    </div>
+    <div class="heart"></div>
+    <div class="message">
+        <h1>I'm sorry, Rachael.</h1>
+        <p>I never meant to hurt you. I know your time means a lot. Please forgive me. ❤️</p>
+        <button class="accept-btn" onclick="alert('That was the last one! ❤️')">I Forgive You</button>
+    </div>
+    <footer>
+        <p>© August, 2024</p>
+    </footer>
+</body>
+</html>
