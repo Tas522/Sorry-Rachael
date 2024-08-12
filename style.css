@@ -1,3 +1,10 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body and Background */
 body {
     display: flex;
@@ -10,33 +17,45 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Navigation Bar */
-.nav {
-    position: absolute;
-    top: 20px;
+/* Header and Navigation Styling */
+header {
+    position: fixed;
+    top: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
-.tabs {
-    display: flex;
-    gap: 20px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.tab {
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: white;
+nav ul li a {
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-family: 'Georgia', serif;
-    transition: background-color 0.3s;
+    color: #ff4b4b;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.tab:hover {
-    background-color: #ff4b4b;
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 60px; /* Offset for the fixed header */
 }
 
 /* Heart Shape and Animation */
@@ -45,7 +64,6 @@ body {
     width: 150px;
     height: 135px;
     animation: pulse 1.5s infinite;
-    margin-bottom: 1000px; /* Adjusted margin to center text and heart */
 }
 
 .heart:before,
@@ -92,20 +110,19 @@ body {
     animation: fadeIn 2s ease-in-out;
     max-width: 90%;
     padding: 0 20px;
+    margin-top: 30px;
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
 }
 
 /* Button Styling */
@@ -119,7 +136,6 @@ p {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Georgia', serif;
 }
 
 .accept-btn:hover {
@@ -130,16 +146,6 @@ p {
 .accept-btn:active {
     background-color: #ff3b3b;
     transform: scale(0.95);
-}
-
-/* Footer Styling */
-footer {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Georgia', serif;
 }
 
 /* Fade-in Animation for Message */
